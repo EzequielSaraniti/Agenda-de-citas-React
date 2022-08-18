@@ -2,8 +2,7 @@ import Paciente from "./Paciente"
 
 Paciente
 
-export default function ListadoPacientes({ pacientes }) {
-
+export default function ListadoPacientes({ pacientes, setPaciente, eliminarPaciente }) {
 
 
     return (
@@ -20,6 +19,8 @@ export default function ListadoPacientes({ pacientes }) {
                         <Paciente
                             key={paciente.id}
                             paciente={paciente}
+                            setPaciente={setPaciente}
+                            eliminarPaciente={eliminarPaciente}
 
                         />
                     )
